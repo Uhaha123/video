@@ -1,23 +1,16 @@
 function myVideo() {
-    document.getElementById('myVideo').load();
-
+    
 
     var video = document.getElementById('myVideo');
     var button = document.getElementById('btn');
-    
-    if (video.paused) {
-        video.play();
+ 
+    if (video.paused) { 
         button.innerText = "Pause";
         button.disabled = true;
         document.getElementById('btn').style.display="none";
         document.getElementById('stop').style.display="block";
-        video.loop = true;
+        video.loop= true;
+        video.autoplay = true;
+        video.play();
     } 
-    else {
-        video.pause();
-        button.innerText = "Play Again";
-    }
-
-    var video = document.getElementById('myVideo');
-    video.volume = 200;
 }
