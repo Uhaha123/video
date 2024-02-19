@@ -5,6 +5,8 @@ function myVideo() {
     var button = document.getElementById('btn');
     var stop = document.getElementById('stop');
     
+    video.autoplay = false;
+    
     if (video.paused || video.ended) {
         video.play();
         button.innerText = "Pause";
