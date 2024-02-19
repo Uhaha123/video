@@ -6,9 +6,13 @@ function myVideo() {
     if (video.paused) { 
         button.innerText = "Pause";
         button.disabled = true;
+        button.style.display="block"
         stop.style.display="block";
-        video.loop= true;
         video.autoplay = true;
         video.play();
     } 
+    else {
+        video.pause();
+        button.innerText = "Play Again";
+    }
 }
