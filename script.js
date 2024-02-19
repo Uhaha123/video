@@ -11,6 +11,7 @@ function myVideo() {
         button.disabled = true;
         document.getElementById('btn').style.display="none";
         document.getElementById('stop').style.display="block";
+        video.loop = true;
     } 
     else {
         video.pause();
