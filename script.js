@@ -3,7 +3,6 @@ function myVideo() {
     
     var video = document.getElementById('myVideo');
     var button = document.getElementById('btn');
-    var stop = document.getElementById('stop');
     
     video.autoplay = false;
     
@@ -11,7 +10,7 @@ function myVideo() {
         video.play();
         button.innerText = "Pause";
         button.disabled = true;
-        stop.style.display="block";
+        document.getElementById('stop').style.display="block";
         video.loop = true;
     } else {
         video.pause();
