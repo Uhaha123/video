@@ -4,7 +4,7 @@ function myVideo() {
     var video = document.getElementById('myVideo');
     var button = document.getElementById('btn');
     
-    if (video.paused || video.ended) {
+    if (video.paused) {
         video.play();
         button.innerText = "Pause";
         button.disabled = true;
